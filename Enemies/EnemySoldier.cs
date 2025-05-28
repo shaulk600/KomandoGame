@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 using KomandoOOP;
 using KomandoOOP.Commands;
+using KomandoOOP.Enemies;
 using KomandoOOP.GameLogic;
+using KomandoOOP.InterFaces;
+using KomandoOOP.Testing;
+using KomandoOOP.Weapons;
 
 
 
