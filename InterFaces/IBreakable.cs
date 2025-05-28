@@ -14,10 +14,10 @@ using KomandoOOP.Weapons;
 
 namespace KomandoOOP.InterFaces
 {
-    internal interface IBreakable // שביר
+    internal interface IBreakable // שביר- אבן
     {
-        string ShowStatus {  get; } // הצג את הסטטוס
-        int NumberWeaponMax();  //   כמה כמות מכות מקסימלית
-        string ShowNumberStrokes();  // הצג כמות מכות נוכחית
+        bool IsHaveStatus(); // אם יש את הסטטוס
+        bool IfLimitNumberBlows();  //   כמה כמות מכות מקסימלית
+        int ShowNumberStrokes();  // הצג כמות מכות נוכחית-הדגש שכבר היו !!!
     }
 }

@@ -14,9 +14,9 @@ using KomandoOOP.Weapons;
 
 namespace KomandoOOP.InterFaces
 {
-    internal interface IShootable
+    internal interface IShootable // ירייה - נשק
     {
-        void Shoot();//תירה 
-        int ShowNumberBalls(); // החזר כמות כדורים
+        bool IfShoot();//אם בעל יכולת לירות  
+        bool IsHaveBalls(); // אם יש כמות כדורים
     }
 }
