@@ -54,7 +54,7 @@ namespace KomandoOOP
         public void SetStatus(string value)
         {
             if( NameOfStatus.Contains(value) )
-            Status = value;
+            this.Status = value;
         }
 
 

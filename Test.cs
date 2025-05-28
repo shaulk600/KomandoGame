@@ -10,6 +10,8 @@ namespace KomandoOOP
     {
         public static void start()
         {
+            List<string> list = new List<string> { "jj" };
+            Console.WriteLine(list[0]);
             Commando soldierOne = new Commando("Toray y", "One scarecrow");
             Commando soldierTow = new Commando("Toray x", "Tow scarecrow");
 
@@ -32,6 +34,9 @@ namespace KomandoOOP
             AirCommando chiefPilot = new AirCommando("Kapten T", "Eagle first");
             AirCommando coPilot = new AirCommando("pilot S", "Eagle second");
 
+            Console.WriteLine("validation of air");
+            chiefPilot.OpenParachute();
+
             chiefPilot.GetStatus();
             coPilot.Attack(chiefPilot);
 
@@ -39,6 +44,10 @@ namespace KomandoOOP
 
             SeaCommando assaultCommander = new SeaCommando("Kapten A", "Black shark kodkod");
             SeaCommando boatOperator = new SeaCommando("Kapten S", "Black whale kodkod");
+            Console.WriteLine("validation of sea");
+            assaultCommander.SayName("GENERAL");
+            assaultCommander.SayName("fdgsrh");
+            assaultCommander.SayName("COLONEL");
 
             List<Commando> objj = new List<Commando> { soldierOne, soldierTow,  chiefPilot, coPilot,   assaultCommander, boatOperator }; //לצורך מימוש אפשר להשתמש ב OBJECT ואפשר להשתמש במימוש של האבא - מחלקת Commando
             

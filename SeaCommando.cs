@@ -8,17 +8,18 @@ namespace KomandoOOP
 {
     internal class SeaCommando : Commando
     {
-        public string unit = "from sea unit";
+        //public string unit = "from sea unit";
 
         public new static List<string> Tools = Commando.Tools.Concat(new List<string> { "hammer", "chisel", "rope", "portfolio", "watery", "sa'ar 6", "Kayak" }).ToList();
-        public new static List<string> NameOfStatus = Commando.NameOfStatus.Concat(new List<string> { "standing", "going", "hiding", "swiming" }).ToList();
+        public new static List<string> NameOfStatus = Commando.NameOfStatus.Concat(new List<string> { "standing", "going", "hiding", "swiming" }).ToList(); //יכול להיות שזה לא אובר רייד? - לבדוק
         public SeaCommando(string name, string nameCode) : base(name, nameCode)
         {
-            name += unit;
+            //name += unit;
         }
         public void Swim()
         {
-            SetStatus(NameOfStatus[3]);
+            string value = NameOfStatus[3];
+            SetStatus(value);
             GetStatus();
         }
         public override void Attack(Commando other)
